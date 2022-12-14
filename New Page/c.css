@@ -1,0 +1,237 @@
+
+* {
+
+    box-sizing: border-box;
+}
+
+/* **************************** 46 **************************** */
+
+/*
+                In Flexible Box
+  For Parent
+    - display: flex; ==> to start flexible box
+        - flex-direction: row ==> default value
+        - flex-wrap: warp ==> to makes wrap for excess elements [ in flexible box ]
+        - flex-flow: wrap row ==> this is the shorthand
+        - align-content: stretch; ==> default value
+        - justify-content ==> make spaces around and between elements
+                            : (space-around) + (space-between) = [ space-evenly ]
+        - justify-content ==> align element V ===> عمودي
+        - align-items ==> align element X ===> راسي
+------------------------------  
+  For Child
+    - display: flex; ==> to start flexible box ( In Parent )
+        - align-self: ==> it align the element by it self (like align-items ) ( بتعمل محاذاه للعنصر نفسه )
+        - flex-grow: 0; ==> 0 is default value
+        - flex-shrink: 1; ==> 1 is default value ( عكس ال flex-grow ) ( بتخلي العناصر تكمش )
+        - order: 0; ==> 0 is default value ( لترتيب العناصر )
+        - flex-basis: auto; ==> auto is default value
+                            - flex-basis ==> supports css units as values
+                            - ( heightولكنه يعمل ايضا مع ال widthيقوم بعمل نفس وظيفة ال )
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+                /* start flex ********************************************************* */
+.flex {
+
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+/*  flex-direction: row;
+    flex-wrap: wrap; */
+                             /* The Shorthand  */
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.flex div {
+
+    background-color: #f00;
+    color: white;
+    width: calc(90% / 5);
+    text-align: center;
+    padding: 20px;
+}
+
+                /* start float ********************************************************* */
+
+.float {
+
+    overflow: hidden;
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.float div {
+
+    background-color: #f00;
+    color: white;
+    float: left;
+    width: calc(90% / 5);
+    text-align: center;
+    padding: 20px;
+    margin: 0 1%;
+}
+
+/* ================================= */
+
+.pa-2 .center {
+
+    background-color: #00f;
+    color: white;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+                /* align-content */
+
+.pa-3 {
+
+    background-color: #eee;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 349px;
+    text-align: center;
+    /* align-items: flex-start; */
+    align-content: flex-start;
+    
+}
+
+.pa-3 div {
+
+    background-color: #f00;
+    padding: 10px;
+    color: white;
+    width: calc(100% / 3);
+}
+
+/* ================================= */
+
+        /* parents */
+
+.flex-grow-test {
+
+    display: flex;
+    background-color: #eee;
+    padding: 20px;
+    width: 700px;
+}
+
+.flex-shrink-test {
+
+    display: flex;
+    background-color: #eee;
+    padding: 20px;
+    width: 700px;
+}
+
+.order-test {
+
+    display: flex;
+    background-color: #eee;
+    padding: 20px;
+    width: 700px;
+}
+
+    /* flex-grow-test */
+
+.pa-4 .flex-grow-test div {
+
+    background-color: red;
+    padding: 20px;
+    color: white;
+    width: 80px;
+    text-align: center;
+    margin-right: 5px;
+    flex-grow: 1;
+}   
+
+        /* flex-shrink-test */
+
+.pa-4 .flex-shrink-test div {
+
+    background-color: red;
+    padding: 20px;
+    color: white;
+    width: 80px;
+    text-align: center;
+    margin-right: 5px;
+    flex-shrink: 4;
+}
+
+        /* order */
+
+.pa-4 .order-test div {
+
+    background-color: red;
+    padding: 20px;
+    color: white;
+    width: 80px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+        /* flex-basis */
+
+.pa-5 {
+
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    padding: 20px;
+    width: 700px;
+}
+
+.pa-5 div {
+
+    background-color: red;
+    padding: 20px;
+    color: white;
+    width: 80px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+        /* align-self */
+
+.pa-6 .parent {
+
+    background-color: #eee;
+    width: 800px;
+    height: 300px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+.pa-6 .parent div {
+
+    background-color: #f00;
+    color: white;
+    width: 80px;
+    text-align: center;
+    padding: 20px;
+    margin-right: 5px;
+    flex-grow: 1;
+}
+
+.pa-6 .parent .test-align-self {
+
+    align-self: flex-end;
+}

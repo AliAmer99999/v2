@@ -1,0 +1,574 @@
+
+
+.pa-36 .parent-36 {
+
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.pa-36 .parent-36 .one-36 {
+
+    background-color: #eee;
+    padding: 10px;
+    width: 80%;
+    float: left;
+    position: relative;
+}
+
+.tt1 {
+
+    position: relative;
+    width: fit-content;
+    padding: 15px;
+    margin: 15px auto;
+    color: #fff;
+}
+
+.tt1::after {
+
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: skew(25deg);
+}
+
+.tt1::before {
+
+    content: '';
+    width: 20%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    transform: skew(25deg);
+}
+
+.pa-36 .parent-36 .user-36 {
+
+    background-color: rgb(238, 238, 238);
+    width: 50px;
+    margin-right: 20px;
+    height: 55.5px;
+    float: left;
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+    position: relative;
+}
+
+.gif-img {
+
+    margin-left: 300px;    
+}
+
+body {
+
+    overflow-x: hidden;
+}
+
+.shm {
+
+    position: relative;
+}
+
+.shm p {
+
+    padding: 10px;
+    background-color: #eee;
+    margin: 10px;
+    text-align: center;
+}
+
+.shm::before {
+
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 7px;
+    left: 462px;
+    border-style: solid;
+    border-width: 14px;
+    border-color: transparent transparent transparent rgb(4, 0, 255);
+}
+
+.pa-40 div {
+
+    background-color: #eee;
+    padding: 16px;
+    margin: 10px auto;
+    font-family: 'Cairo';
+    font-size: 25px;
+    line-height: 1.2;
+    width: 85%;
+    position: relative;
+}
+
+.vs {
+
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+}
+
+.vs p::before {
+
+    content: "";
+    height: 0;
+    width: 0;
+    background-color: transparent;
+    position: absolute;
+    border: 17px solid;
+    border-color: red transparent transparent ;
+    left: 20px;
+    top: 12px;
+}
+
+.list-test-001 ul li {
+
+    list-style: none;
+    position: relative;
+    padding-bottom: 13px;
+}
+
+.list-test-001 ul li::before {
+   
+    content: "";
+    position: absolute;
+    border: 11px solid;
+    border-color: transparent transparent transparent #4caf50;
+    left: -15px;
+    top: 0px;
+}
+
+.pa-41 {
+
+    background-color: #FFF;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.pa-41 .div-0010 {
+
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    left: 232px;
+    top: 147px;
+}
+
+.pa-41 .div-0020 {
+
+    background-color: #ff9800;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 432px;
+    top: 247px;
+    border-top-left-radius: 107px 52px;
+    border-top-right-radius: 64px 248px;
+    border-bottom-right-radius: 10px 10px;
+    border-bottom-left-radius: 77px 50px;
+}
+
+.pa-41 .div-0030:hover {
+    background-color: white;
+    color: rebeccapurple;
+    border: rebeccapurple solid 3px;
+    padding: 16px;
+    margin: 60px auto;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.pa-41 .div-0030 {
+
+    background-color: white;
+    color: #ff9800;
+    border: #ff9800 solid 3px;
+    padding: 16px;
+    margin: 60px auto;
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 29px;
+}
+
+.pa-41 .div-0030::selection {
+
+    color: white;
+    background-color: #ff9800;
+}
+
+
+.pa-42 div {
+
+    padding: 15px;
+    text-align: center;
+    font-family: 'Cairo';
+    font-size: 42px;
+
+}
+.pa-42 {
+
+    background-color: #eee;
+    margin: 20px auto;
+    width: 80%;
+    padding: 16px;
+    
+}
+
+.pa-43 .parent-43 {
+
+    width: 600px;
+    /* overflow: hidden; */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+.pa-43 .parent-43 .one-43 {
+
+    background-color: #eee;
+    width: calc(600px / 3);
+    padding: 10px;
+    border: 3px solid rebeccapurple;
+    box-sizing: border-box;
+    float: left;
+}
+
+/* ***************************** */
+
+.clear {
+
+    clear: both;
+}
+
+/* ************ - Transition ********** */
+
+.pa-44 div {
+    background-color: #eee;
+    font-family: 'Cairo';
+    font-size: larger;
+    padding: 10px;
+    width: 400px;
+    height: 100px;
+    
+    /*
+    transition-duration: 1s;         /* Transition time *./
+    transition-delay: .1s;          /*Transition late*./
+    transition-property: margin-left , margin-top;      /* Who will get the transition's properties*./
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);    /*How element will trans*./ 
+    */ 
+    transition: margin-left 1s , margin-top 1.3s , color 1s;           /* The shorthand of transition */
+}
+
+.pa-44 div:hover {
+
+    margin-left: 190px;
+    margin-top: 20px;
+    width: 500px;
+    /* ------------------------------ */
+    background-color: #03a9f4;
+    color: white;
+    text-align: center;
+    font-family: 'Ubuntu';
+    padding: 10px;
+}
+
+.test-anmi div {
+
+    background-color: red;
+    color: #3f51b5;
+    padding: 10px;
+    width: 399px;
+    height: 100px;
+    text-align: center;
+    font-size: 45px;
+    transition-duration: .8s;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.test-anmi div:hover {
+
+    background-color: #3f51b5;
+    color: red;
+    padding: 10px;
+    margin-left: 160px;
+    margin-top: 15px;
+    width: 399px;
+    height: 100px;
+    text-align: center;
+    font-size: 45px;
+}
+
+.pa-45 {
+
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+}
+
+                /* First Img */
+.pa-45 .m1 {
+
+    height: 400px;
+    width: 400px;
+    transition: .3s;
+    filter: grayscale(100%);
+}
+
+.pa-45 .m1:hover {
+
+    filter:none;
+}
+                /* Second Img */
+.pa-45 .m2 {
+
+    height: 400px;
+    width: 400px;
+    transition: .3s;
+    filter: blur(6px);
+}
+
+.pa-45 .m2:hover {
+
+    filter: none;
+}
+                /* Third Img */
+.pa-45 .m3 {
+
+    height: 400px;
+    width: 400px;
+    transition: .99s;
+    filter:none;
+}
+
+.pa-45 .m3:hover {
+
+    filter: brightness(2.5);
+}
+
+
+/* --------------------------- */
+
+.title-img img::selection {
+
+    background-color: red;
+    opacity: 20%;
+}
+
+.title-img img {
+
+    filter: drop-shadow(2px 4px 6px black);
+    height: 500px;
+    width: 500px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.title-img:hover::after {
+
+    content: "";
+    background-color: black;
+    height: 421px;
+    width: 4px;
+    position: absolute;
+    top: 41px;
+    left: 540px;
+    transition: .4s;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.button001 {
+
+    width: 667px;
+    height: fit-content;
+    background-color: #2196f3;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px auto;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: capitalize;
+    box-shadow: 2px 4px 6px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button001:hover {
+
+    width: fit-content;
+    height: fit-content;
+    background-color: #2196f3;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: capitalize;
+    box-shadow: 2px 4px 6px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(1.12);
+}
+
+a {
+
+    text-decoration: none;
+}
+
+.pa-60 {
+
+    width: 80%;
+    height: 300px;
+    margin: 10px auto;
+    background-image: linear-gradient(to top, blue , red 50px , black);
+    transition: 1.3s;
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.pa-60:hover {
+
+    width: 60%;
+    height: 300px;
+    margin: 10px auto;
+    background-image: linear-gradient( 270deg , rgba(0, 0, 255, 0.849) , rgba(255, 0, 0, 0.219) , rgba(0, 0, 0, 0.801));
+}
+
+.pa-59 {
+
+    width: 400px;
+    height: 200px;
+    background-color: #eee;
+    margin: 20px auto;
+    position: relative;
+    padding: 10px;
+}
+
+.pa-59::before {
+
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    height: 6px;
+    background-image: linear-gradient(to right , #2980b9 , #27ae60 );
+    transition-duration: 1s;
+}
+
+/* -------------------- */
+
+.pa-66 {
+
+    display: grid;
+    grid-template-columns: repeat(2, 35%);
+    justify-content: space-evenly;
+}
+
+.pa-66 .p11 , .p12 , .p13 , .p14 {
+
+    width: 290px;
+    height: 230px;
+    margin: 10px auto;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.pa12 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-of-rs {
+
+    text-transform: capitalize;
+    color: #9c27b0 ;
+    text-align: center;
+    font-family: 'Cairo';
+    margin: 0;
+}
+
+/* -------------------------- */
+
+        /* Name of Transform's function */
+
+.pa-66 .p11::before {
+
+    content: "scale";
+    position: absolute;
+    left: -26%;
+    top: 0px;
+    background-color: #2196f3;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+}
+
+.pa-66 .p12::before {
+
+    content: "translate";
+    position: absolute;
+    left: -35%;
+    top: 0px;
+    background-color: #2196f3;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+}
+
+.pa-66 .p13::before {
+
+    content: "skew";
+    position: absolute;
+    left: -26%;
+    top: 0px;
+    background-color: #2196f3;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+}
+
+.pa-66 .p14::before {
+
+    content: "matrix";
+    position: absolute;
+    left: -28%;
+    top: 0px;
+    background-color: #2196f3;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+}

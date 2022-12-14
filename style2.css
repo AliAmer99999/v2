@@ -1,0 +1,353 @@
+
+* {
+
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: #fefefe;
+}
+
+/* 
+block element 
+    
+    1- Respect width and height and padding and margin
+    2- Take full width if there is not width 
+    3- Take all line   
+*/
+
+                /* example  */
+
+.divv{
+
+    display: block;
+    background-color: #EEE;
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.first-div{
+
+    padding-left: 6px;
+    border: 1px black solid;
+}
+
+/* 
+inline element 
+
+    1- Don't respect width and height  
+    2- Respect padding and margin [ but just right and left ]
+    3- Don't take all line
+*/
+
+            /* example  */
+
+.spann{
+
+    display: inline;
+    background-color: #EEE;
+    padding: 0 10px;
+    margin: 10px;
+
+}
+.second-div{
+
+    padding-left: 6px;
+    border: 1px black solid;
+}
+
+
+/* 
+    inline-block element 
+
+    1- Respect width and height and padding and margin  [ Respect all  dimensions ]
+    2- Don't take all line
+    
+*/
+            /* example  */
+
+.span2{
+
+    display: inline-block;
+    background-color: #EEE;
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+    border-bottom: red 4px solid;
+    text-align: left;
+}
+
+.third-div{
+
+    padding-left: 6px;
+    border: 1px black solid;
+}
+
+
+h2{
+
+    color: red;
+
+}
+
+.inp-2{
+
+    /*display: none; ==> Hidden element and his place*/
+    /* visibility: hidden; ==> Just hidden element */
+}
+              /* groubing */
+.div-1{
+
+    color: red;
+    border-bottom: 5px red solid;
+}
+
+.div-2{
+
+    color: black;
+    border-bottom: 5px black solid;
+}
+
+.div-3{
+
+
+    border-bottom: 5px green solid;
+    color: green;
+}
+
+.div-4{
+
+    border-bottom: 5px purple solid;
+    color: purple;
+}
+          
+.div-1,
+.div-2,
+.div-3,
+.div-4{
+
+    background-color: #EEE;
+    padding: 20px;
+    margin: 15px;
+}
+
+        /* nesting */
+.div-p-blue p{
+
+    color: blue;
+}
+
+div .spcial{
+
+    color: blue;
+}
+
+div span{
+
+    display: block;
+}
+
+.red{
+
+    height: 150px;
+    background-color: red;
+}
+
+.white{
+
+    height: 150px;
+    background-color: white;
+    
+}
+
+.nsr{
+
+    display: block;
+    width: 9%;
+    height: 120px;
+    padding: 15px 0 15px 0;
+    margin: 0 auto;
+}
+
+.balck{
+
+    height: 150px;
+    background-color: black;
+}
+
+.dimensions{
+
+    border: 2px black solid;
+}
+
+.dimensions div{
+
+    margin: 10px;
+    padding: 10px;
+    background-color: red;
+/*  min-width: 200px;
+    max-width: 600px;    
+    max-height: 40px;
+    min-height: 10px;   */
+    width: fit-content;
+    height: fit-content;
+}
+
+.lesson-16-overflow{
+
+    overflow: auto;
+    border-left: 4px red solid;
+    width: 150px;
+    padding: 15px;
+    margin: 20px auto;
+    height: 150px;
+    background-color: #ededed;
+}
+
+    /* Text-Shadow Syntax ==> x-shadow y-shadow blur color */
+
+.test-shadow {
+
+    padding: 15px;
+    color: white;
+    text-shadow: 3px 7px 4px black;
+    background-color: #EEE;
+    margin: 15px;
+}
+
+.text-proprty {
+
+    background-color: #EEE;
+    color: black;
+    text-align: right;
+    direction: rtl;
+}
+
+.adel-shkal {
+
+    width: 60px;
+    height: 60px;
+}
+
+.face-acc {
+
+    display: inline-block;
+    padding: 15px;
+    margin: 0 15px 0 0;
+    background-color: blue;
+    font-family: cursive;
+    color: white;
+    /* position: fixed; */
+    /* border-radius: 6px; */
+    text-decoration: none;
+    border-radius: 16px;
+    border-bottom: #332293 solid 10px;
+}
+
+    /* 
+    text-transform values ==> uppercase --> ALL LETTERS IS CAPITAL 
+    , lowercase --> all letters is small
+    , capitalize --> Just fist letter of word is capital
+    */
+
+.text-test-transform {
+
+    background-color: #EEE;
+    padding: 20px;
+    margin: 15px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-indent: 10px;
+}
+
+.div-lorem {
+
+    background-color: #EEE;
+}
+
+.div-lorem p {
+
+    padding: 15px;
+    margin: 15px;
+    color: black;
+    text-indent: 150px;
+    line-height: 1.6;
+    /* letter-spacing: 2px */
+    /* word-spacing: 6px; */
+    /* white-space: nowrap; */
+}
+
+.div-lorem-2 {
+
+    background-color: #EEE;
+    padding: 10px 20px;
+    margin: 15px;
+    max-width: 250px;
+    word-break: break-word;
+}
+
+.test-txt-overflow {
+
+    background-color: #EEE;
+    max-width: 250px;
+    padding: 10px 20px;
+    margin: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+body {
+
+    /* font-family: 'Trispace', cursive; */
+    font-family: 'Cairo', cursive;
+    font-size: 30px;
+}
+
+.fotn-test {
+
+    font-size: 30px;
+    font-family: 'Cairo', serif;
+    direction: rtl;
+    margin: 10px;
+    padding: 15px;
+    background-color: #ededed;
+}
+
+.test-inherit {
+
+    background-color: #EEE;
+}
+
+nav ul li {
+
+    list-style: none;
+}
+
+/* ----------------------- */
+
+.parent-of-grid {
+
+    width: 100%;
+    height: fit-content;
+}
+
+.parent-of-grid .pa-1 {
+
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #EEE;
+}
+
+.parent-of-grid .pa-1 div {
+
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}

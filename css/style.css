@@ -1,0 +1,1036 @@
+/* 
+body {
+
+    margin: 0;
+}
+
+nav p {
+
+    display: inline-block;
+} */
+
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+
+    /* font-family: 'Cairo' , cursive ; */
+    min-height: fit-content;
+}
+
+.p-w{
+
+    color: red;
+}
+
+.p-1{
+
+    text-align: center;
+    color: red !important;
+    text-shadow: 5px 6px 4px black !important;
+
+}
+
+.div-p{
+    
+     color: white;
+     background-image: url(../media/adel-shakal.png);
+     /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+    /* background-size: contain; */
+}
+
+.user-name{
+
+    width: 50%;
+}
+
+.label-user-name{
+
+    font-style: family;
+    color: blueviolet;
+}
+
+.send-button{
+    
+    width: 100px;
+    color: red;
+}
+
+a{
+    color: blue;
+}
+
+.div-padding{
+    /* 
+    border-width: 10px ;
+    border-color: red hotpink;
+    border-style: solid dotted dashed solid; 
+    outline: 10px black solid;
+    */
+    background-color: #ddd;
+    padding: 10px;
+    width: 70%;
+    margin: 0 auto;
+    border: 10px green solid;
+    width: 300px;
+}
+
+.test-inherit {
+
+    background-color: #eee;
+    padding: 20px;
+    margin: 20px 10px 10px;
+    border: 4px solid blue;
+}
+
+.test-inherit p {
+
+    color: black;
+    border: 4px solid;
+    padding: 10px;
+    border-color: inherit;
+}
+
+    /*
+        ---- css units ----
+
+            - px 
+            - percent % ==> inherit its value form its father
+            - em ==> inherit its value form its father [ 1em = 1 x father's value ] 
+            - rem ==> inherit its value form root [ 1em = 1 x root's value ] [ root mean html tag ] 
+            - vw ==> 
+                     - [ it's mean view port width ] 
+                     - 1vw = 1% of view port width of the screen  
+                        example:- 
+                                  -If the view port width of screen is 840px.   
+                                  - 1vw = 8.4px   
+    */                 
+    
+    /*
+        - Default font size of web page is 16px  
+    */
+
+.css-units {
+
+    padding: 20px;
+    margin: 15px;
+    background-color: #eee;
+    font-size: 50px;
+    font-style: italic !important;
+}
+
+.css-units span {
+
+    background-color: rgba(255, 0, 0, 0.39);
+    padding: 2px;
+    /* font-size: 50%; */
+    /* font-size: 2em; */
+    /* font-size: 2rem; */
+    /* font-size: 2vw; */
+}
+
+.img-c {
+
+    cursor: help;
+}
+
+.test-font-weight {
+
+    padding: 15px;
+    margin: 10px;
+    background-color: #eee;
+    font-weight: 600;
+}
+
+.test-font-weight h1 {
+
+    font-weight: normal;
+}
+
+.youtube-button a {
+
+    text-decoration: none;
+    color: white;
+}
+
+.parent {
+
+    background-color: red;
+    padding: 10px;
+}
+
+.parent div {
+
+    background-color: #eee;
+    text-align: center;
+    padding: 10px 0;
+    width: 33.3%;
+    float: left;
+}
+
+.clear {
+
+    clear: both;
+}
+
+.anthor-body {
+
+    background-color: #eee;
+    padding: 15px 0;
+}
+
+.anthor-body div {
+
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.534);
+    float: left;
+    width: calc(93% / 6);
+    margin-left: 1%;
+}
+
+.clear-2 {
+
+    clear: both;
+}
+
+/* 
+    Content Width Is: 100%
+    7 Spaces 1% * 7 ==> 7% From Content Width
+    93% Available Space 
+    6 Elements The width Is: 93% / 6
+*/
+
+.youtube-button:hover {
+
+    background-color: green;
+    padding: 10px 0;
+    margin: 0 10px;
+    width: calc((100% - 30px) / 2);
+    border-bottom: 7px solid rgb(7, 51, 7);
+    border-radius: 13px;
+    text-align: center;
+}
+
+.home:hover {
+
+    background-color: rgb(223, 16, 16);
+    border-bottom: 5px solid rgb(145, 12, 12);
+    width: calc((100% - 30px) / 2);
+    padding: 10px 0;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 14px;
+}
+
+.home {
+
+    background-color: green;
+    padding: 10px 0;
+    margin-left: 10px;
+    width: calc((100% - 30px) / 2);
+    border-bottom: 7px solid rgb(7, 51, 7);
+    border-radius: 13px;
+    text-align: center;
+    float: left;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.youtube-button {
+
+    background-color: rgb(223, 16, 16);
+    border-bottom: 5px solid rgb(145, 12, 12);
+    width: calc((100% - 30px) / 2);
+    height: fit-content;
+    padding: 10px 0;
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 14px;
+    float: left;
+    color: white;
+}
+
+.pa-34 .two {
+
+    background-color: #ccc;
+    width: 100px;
+    height: 100px;
+}
+
+.home a {
+
+    color: white;
+    text-decoration: none;
+}
+
+.one {
+
+    background-color: rgba(255, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.tow {
+
+    margin-top: 10px;
+    padding: 10px;
+    background-color: red;
+    opacity: 0.3;
+}
+
+.one-tow div {
+
+    padding: 10px;
+    width: 100px;
+    color: white;
+    border-radius: 5px;
+}
+
+/*
+        - position: relative; ==> makes element in workflow
+        - position: absolute; ==> makes element out of workflow ==> out of workflow means 
+          [ When element be out of his parent]
+
+                            **IMPOTENT NOTE9** 
+
+        - To make element with position: absolute; respect his parent , we have to make
+        the parent position: relative;
+*/
+
+.one-tow .one-001 {
+
+    background-color: red;
+    /* position: relative; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.one-tow .tow-001 {
+
+    background-color: green;
+}
+
+.parent-1 {
+
+    width: 100% !important;
+    border-radius: 0px !important;
+    margin: 10px auto;
+    position: relative;
+    height: 300px;
+    background-color: blue;
+}
+
+.na7o-button a img {
+
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    right: 0;
+    bottom: 8px;
+    cursor: pointer;
+}
+
+.test-test img {
+
+    height: 400px;
+    width: 300px;
+    position: sticky;
+    top: 0;
+}
+
+.test-test {
+
+    position: sticky;
+    top: 0;
+}
+
+.test-test p {
+
+    font-family: 'Cairo', 'Amiri Quran';
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.pa-31 {
+
+    border: black 3px solid;
+    height: 153px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.pa-31 div {
+
+    padding: 10px;
+    margin: 0 10px;
+    color: white;
+    width: 200px;
+    text-transform: capitalize;
+    text-align: center;
+    position: absolute;
+}
+
+    /* 
+        - Z-index not work without position
+    */
+
+.pa-31 .one {
+
+    background-color: red;
+    left: 45px;
+    top: 38px;
+    z-index: 3;
+}
+
+.pa-31 .two {
+
+    background-color: green;
+    left: 25px;
+    top: 25px;
+    z-index: 2;
+}
+
+.pa-31 .three {
+
+    background-color: blue;
+    z-index: 1;
+}
+
+.styleing-lists h1 {
+
+    text-align: center;
+    color: red;
+    font-family: 'Cairo';
+    letter-spacing: 2px;
+
+}
+
+/* .styleing-lists ul .js {
+
+    list-style-type: disclosure-open;
+} */
+
+.styleing-lists ul {
+ 
+/*  list-style-type: disclosure-closed;
+    list-style-position: inside;
+    background-color: #eee;
+    padding: 10px;
+    list-style-image: url(../media/aa.png); */
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+                    /* border spacing is just for table not thead or tr or td just for table  */
+table {
+
+    width: 100%;
+    border-spacing: 0px;
+}
+
+table thead tr td {
+
+    background-color: #e91e63;
+    padding: 10px;
+    border: 2px solid #e12f6c;
+    text-align: center;
+    font-family: 'Cairo';
+    font-size: 25px;
+    /* font-weight: bold; */
+    color: white;
+}
+
+table td {
+
+    background-color: #eee;
+    padding: 10px;
+    margin: 2px;
+    border: 2px solid #ccc;
+}
+
+.button-test div {
+
+    background-color: #ffcf46;
+    padding: 10px;
+    text-align: center;
+    width: 166px;
+    text-transform: capitalize;
+    color: black;
+    font-family: 'museo-sans-rounded-bold', 'sans-serif';
+    border-radius: 3px;
+} 
+
+.button-test {
+
+    text-decoration: none;
+}
+
+.p-e {
+
+    /* caret-color: transparent; */
+    caret-color: red;
+    background-color: #ccc;
+    padding: 10px;
+}
+
+.pa-35 .three-lorem {
+
+    /* caret-color: yellow; */
+    background-color: #9c27b0;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: larger;
+}
+    /* - Pointer-events stops any action to do  */
+
+.p-e a:hover {
+
+    pointer-events: none;
+    color: black;
+    text-decoration: none;
+    cursor: wait;
+}
+
+.p-e a {
+
+    /* text-decoration: none; */
+    cursor: wait;
+}
+
+.fonts-test .arbic p {
+
+    direction: rtl;
+}
+
+    /* - Arbic fonts test */
+
+.fonts-test .arbic{
+
+    border: black solid 3px;
+    position: relative;
+}
+
+    /* - Fonts */
+
+.fonts-test .arbic .one {
+
+    font-family: 'Cairo';
+    padding: 15px;
+    margin: 15px;
+    background-color: #00bcd4;
+}
+
+.fonts-test .arbic .toww {
+
+    font-family: 'Amiri Quran';
+    padding: 0 15px 8px;
+    margin: 15px;
+    background-color: #dddddd;
+    font-size: 27px;
+
+}
+
+.fonts-test .arbic .three {
+
+    font-family: 'Jomhuria';
+    padding: 15px;
+    margin: 15px;
+    background-color: #e91e63;
+    font-size: 39px;
+}
+
+        /* - Another elements - arbic fonts */
+
+.fonts-test .arbic h1 {
+
+    color: red;
+    text-align: center;
+    font-family: 'Cairo';
+    margin-bottom: 0px;
+}        
+
+.fonts-test .arbic h4 {
+
+    text-align: center;
+    font-family: 'Cairo';
+    margin: 0;
+    position: absolute;
+    left: 45%;
+    top: 75px;
+}
+
+    /* -------------------------------------- */
+
+
+    /* - English fonts test */
+
+.fonts-test .english{
+
+    border: black solid 3px;
+    position: relative;
+}
+
+/* - Fonts */
+
+.fonts-test .english .one {
+
+    font-family: 'Cairo';
+    padding: 15px;
+    margin: 35px 15px 15px;
+    font-weight: bold;
+    font-size: 28px;
+    background-color: #f44336;
+}
+
+.fonts-test .english .toww {
+
+    font-family: 'Rubik Bubbles';
+    padding: 15px;
+    margin: 15px;
+    background-color: #ffcf46;
+    font-size: 27px;
+
+}
+
+.fonts-test .english .three {
+
+    font-family: 'Ubuntu';
+    padding: 15px;
+    margin: 15px;
+    background-color: #03a9f4;
+    font-size: 39px;
+}
+
+        /* - Another elements - english fonts */
+
+.fonts-test .english h1 {
+    
+    color: red;
+    text-align: center;
+    font-family: Cairo;
+    margin-bottom: 0px;
+}   
+
+.fonts-test .english h4 {
+
+    text-align: center;
+    font-family: 'Cairo';
+    margin: 0;
+    position: absolute;
+    left: 45%;
+    top: 82px;
+}
+
+/* ----------------------------------- */
+
+/*
+                 - Pseudo Classes
+                   1- :hover 
+                   2- checkbox:checked 
+                   3- input:focus 
+                   4- :checked + another element 
+                   5- :visited [ just for links ]
+                   6- element:empty [ u can target all empty elements ( like this :empty ) ]
+*/
+.pa-34 {
+
+    border: black 2px solid;
+    padding: 10px;
+}
+
+.pa-34 a {
+
+    text-decoration: none;
+}
+
+.pa-34 a:hover {
+
+    color: red;
+}
+
+/* .ch:checked {
+
+    display: none;
+} */
+
+.ch:checked + label{
+
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pa-34 a:visited {
+
+    color: black;
+}
+
+.pa-34 div:empty {
+
+    border: 5px solid red;
+    border-radius: 5px;
+}
+
+.pa-34 .inp:focus {
+
+    outline-color: red;
+    caret-color: red;
+    color: red;
+}
+
+.fonts-test .arbic .one:focus {
+
+    outline: none;
+    cursor: wait;
+    caret-color: white;
+}
+
+/* .......................................... */
+
+/*
+                     - Pseudo Elements         
+                        1- Element::First-letter 
+                        2- Element::First-line 
+                        3- Element::Selection [ ::Selection ==> for all elements ]
+                        4- Element::After [ make a fake element after original element ] 
+                            [ we have to add (content: ;) to run after]
+                        5- Element::Before [ same story about after ]
+                ****************************************************
+                        * - We can make a counter and add its as a content or after or before
+                                - Syntax 
+                                         1- Write [ counter-reset: name; ] in parent
+                                         1- Write [ counter-increment: div-number;
+                                                    content: counter(div-number); ] in children
+*/
+
+.pa-35 .first-lorem::first-letter {
+
+    background-color: #00bcd4;
+    display: inline-block;
+    font-weight: bold;
+    font-size: larger;
+    margin-right: 3px;
+    font-family: 'Cairo';
+}
+
+.pa-35 .second-lorem::first-line {
+
+    background-color: #ccc;
+    display: inline-block;
+    font-weight: bold;
+    font-family: 'Cairo';
+}
+
+.pa-35 .three-lorem::selection {
+
+    background-color: #9c27b0;
+    color: #2600ff;
+    padding: 100px;
+}
+
+.pa-40 {
+    
+    counter-reset: div-number;
+    position: relative;
+}
+
+.pa-40 div::before {
+
+    counter-increment: div-number;
+    content: counter(div-number);
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 2px 7px;
+    position: absolute;
+    top: 16px;
+    left: -20px;
+}
+
+.pa-40 div:hover::after {
+
+    content: attr(data-text);
+    color: #fff;
+    font-weight: bold;
+    padding: 2px 7px;
+    background-color: red;
+    text-align: center;
+}
+
+/* .......................................... */
+
+/*
+    CSS Variables
+        - Syntax :-
+                - Property: var(Variable name , fallback value );   [ fallback value is alternative value ]
+*/
+
+:root {
+
+    /* --variableName: value; */
+    --mainColor: red;
+    --mainFamily: 'Ubuntu';
+}
+            /* - Elements style */
+.pa-37 {
+
+    background-color: #6b6969;
+    width: 100%;
+    height: 500px;
+    font-size: larger;
+}
+
+.pa-37 .main2 {
+
+    background-color: #eee;
+    color: var(--mainColor , black);
+    font-family: var(--mainFamily);
+    padding: 10px;
+    margin: 1rem;
+}
+
+.pa-37 h2 {
+
+    background-color: #eee;
+    color: var(--mainColor);
+    font-family: var(--mainFamily);
+    padding: 10px;
+    margin: 1rem;
+}
+
+.pa-37 p {
+
+    color: var(--mainColor);
+    border: 4px solid var(--mainColor);
+    font-family: var(--mainFamily);
+    padding: 10px;
+    margin: 1rem;
+}
+
+.pa-37 a {
+
+    margin: 1rem;
+    font-family: var(--mainFamily);
+}
+
+.pa-37 a:hover {
+
+    color: var(--mainColor);
+    font-family: var(--mainFamily);
+}
+
+/* .......................................... */
+
+    /*
+        - Box shadow ==> 
+                         box-shadow: h-shadow v-shadow blur spread color inset;
+        * We can make many shadows.
+    */
+
+.pa-42 {
+
+    box-shadow: 0px 0px 20px 20px #5757575e inset , 14px 13px 0px 0px #ccc;
+}
+
+/* .......................................... */
+
+.pa-61 {
+
+    width: 80%;
+    height: 300px;
+    margin: 10px auto;
+    background-image: linear-gradient(to top, black , white , yellow 1px , red  );
+}
+
+/* .......................................... */
+
+/*
+     Transform: 
+                - scaleX(2)
+                - scaleY(2)
+                - The Shorthand ==> scale(x , y) or scale(-x , -y)
+                - rotate (0deg) [ 0 is default value ] 
+                - translate(x , y) [ we can use css units as values ]
+                - skew(x , y)
+                - matrix ( scaleX() , skewY() , skewX() , scaleY() , translateX() , translateY() )
+                    [ Matrix is shorthand ] [ The unit is normal numbers ] [ We can't use css units ]
+                * we can to use values in the same transform like ==> transform: scale() rotate() skew() translate();
+
+*/
+
+.pa-66 .p11 span {
+
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    opacity: .5;
+    font-size: 32px;
+    transition: .5s;
+}
+
+.pa-66 .p11 span:hover {
+
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    opacity: .5;
+    font-size: 32px;
+    transform: scalex(-1);
+}
+
+/* ------------------ */
+
+.p12 span {
+
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    opacity: .5;
+    font-size: 32px;
+    transition: .5s;
+}
+
+.p12 span:hover {
+
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    opacity: .5;
+    font-size: 32px;
+    transform: translate(10px , 20px);
+}
+
+/* ---------------------------- */
+
+.pa-66 .pa12 span {
+
+    background-image: linear-gradient(to top , #009688 , #9c27b0);
+    width: 40px;
+    height: 100px;
+    transition: .5s;
+    transform: rotate(180deg);
+}
+
+        /* rotate and scale in example */
+
+.rotate-and-scale {
+
+    height: 400px;
+    width: 400px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.rotate-and-scale img {
+
+    height: inherit;
+    width: inherit;
+    transition: .5s;
+    transform: scale(1) rotate(0deg);
+}
+
+.rotate-and-scale img:hover {
+
+    height: inherit;
+    width: inherit;
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* -------------------------------- */
+
+.pa-66 .p13 span {
+
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    opacity: .5;
+    font-size: 32px;
+    transition: .5s;
+}
+
+.pa-66 .p13 span:hover {
+
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    opacity: .5;
+    font-size: 32px;
+    transform: skew(30deg , 7deg);
+}
+
+/* ------------------------------------------ */
+
+.pa-66 .p14 span {
+
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    opacity: .5;
+    font-size: 32px;
+    transition: .5s;
+}
+
+.pa-66 .p14 span:hover {
+
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    opacity: .5;
+    font-size: 32px;
+    transform: matrix(-1 , -1 , 0 , 1 , 0 , 0);
+}

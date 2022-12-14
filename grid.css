@@ -1,0 +1,190 @@
+
+* {
+
+    box-sizing: border-box;
+}
+        /*
+            vw ==> form 1 to 100 [ the values like percent's values ] [ تعني عرض الشاشة الحالي مهما كان vw ]
+            vh ==> form 1 to 100 [ the values like percent's values ] [ تعني طول الشاشة الحالي مهما كان vw ]
+        */
+/*
+    [ For Parent ] :
+                    - display: grid; ==> To start grid
+                    - grid-template-columns ==> column 1 column 2 ... [ column's units ==> px , % , auto , fraction , mix]
+                    - grid-template-rows ==> row 1 row 2 ... [ row's units ==> px , % , auto , fraction , mix ]
+                        * Examples about how to write units ==>  auto auto 1fr - 200px 1fr 1fr - auto 200px repeat(3 , 50px) 25% - auto auto auto - 200px 400px 200px - 25% 50% 25% *
+                        * we can use repeat( column's number or rows , column's unit rows ) to make columns or rows 
+                        --------------------------------------------------------------------------
+                        ^ The Difference between  auto and fraction ^
+                            auto ==> gets width or height just to fit content
+                            fraction ==> بياخد باقي المساحة اللي الاتو سايبها
+                        --------------------------------------------------------------------------
+                    - row-gap ==> to make spaces between rows
+                    - column-gap ==> to make spaces between columns
+                     * There is a shorthand [ gap ==> row-gap column gap ]
+                    - justify-content ==> flex-start , center , flex-end , space-around  , space-between , space-evenly 
+                    - align-content ==> flex-start , center , flex-end , space-around  , space-between , space-evenly 
+                    * minmax( min , max ) ==> this function to limit column width 
+                    * repeat( auto-fill , width of column ) . [ auto-fill makes width is auto fill by screen size ]
+    [ For Child ] :
+                    - grid-column ==> start / end (or) span columns's number  [ to make colspan ]
+                    - grid-row ==> start / end (or) span row's number  [ to make colspan ]
+                    - grid-area ==> [ Grid Row Start ] [ Grid Column Start ] [ Grid Row End ] [ Grid Column End ]
+                     
+
+*/
+
+.parent {
+
+    margin: 20px auto;
+    width: 800px;
+    height: fit-content;
+    background-color: #EEE;
+    display: grid;
+    grid-template-columns: repeat(4 , auto); /* width {of column}*/
+    grid-template-rows: repeat(3 , auto);  /* height {of row}*/
+    gap: 15px;
+    /* justify-content: space-between; */
+    /* align-content: flex-start; */
+}
+
+.parent div {
+    
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ************************************************ */
+
+.body-2 {
+
+    border: #DEDEDE 1px solid;
+    height: 918px;
+    background-color: #eee;
+}
+
+.body-2 * {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.body-2 .page {
+
+    height: 95vh;
+    width: 95vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(10 , 1fr);
+    grid-template-rows: 50px auto 50px; /* the height of rows */
+    grid-template-areas: 
+        "logo logo nav nav nav nav nav nav nav nav"
+        "cont cont cont cont cont cont cont cont side side" 
+        "footer footer footer footer footer footer footer footer footer footer";
+}
+
+.page * {
+
+    color: white;
+    font-weight: bold;
+}
+
+    /* names */
+
+.page h2 {
+
+    grid-area: logo;
+    background-color: red;
+}
+
+.page nav {
+
+    grid-area: nav;
+    background-color: blue;
+}
+
+.page section {
+
+    grid-area: cont;
+    background-color: yellow;
+}
+
+.page aside {
+
+    grid-area: side;
+    background-color: green;
+}
+
+.page footer {
+
+    grid-area: footer;
+    background-color: black;
+}
+
+    /* Styling */
+
+.page ul {
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page ul li {
+
+    margin-left: 14px;
+}
+
+    /* children */
+
+.one {
+
+    grid-column: /* span 3 */ /* 2 / span 3 */ /* 1 / 5 */ ;
+    grid-row: /* span 4 */ ;
+}
+
+.six {
+
+    grid-area: 1 / 2 / 5 / 5;
+    background-color: green !important;
+}
+
+/* --------------- */
+
+.parent-2 {
+
+    background-color: #EEE;
+    margin: 10px auto;
+    width: 800px;
+    height: fit-content;
+    display: grid;
+    grid-template-areas: "he he he";
+    gap: 15px;
+}
+
+.parent-2 div {
+
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent-2 .five-2 {
+
+    grid-area: 1 / 2 / span 3 / span 3;
+    background-color: green;
+}
+
+/* ---------------- */
+
